@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snatched by Cece | Book an Appointment</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050707;color:#f7f7f7;font-family:Arial,sans-serif}
+body:before{content:'';position:fixed;inset:0;z-index:-2;background:linear-gradient(120deg,#010303,#061313,#010202)}
+.top{position:sticky;top:0;z-index:5;background:rgba(2,3,3,.97);border-bottom:1px solid #168f90;padding:15px 4%;display:flex;align-items:center;gap:20px}
+.top a{color:#ddd;text-decoration:none;font-size:12px;margin:0 8px}.top a:hover{color:#28caca}.brand{color:#28caca!important;font-weight:bold;font-size:18px!important;margin-right:auto!important}
+.btn{border:1px solid #20a8a8;border-radius:15px;padding:10px 15px;color:#2acaca!important}
+.hero{min-height:470px;text-align:center;position:relative;overflow:hidden;background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI[...]
+.cc{display:none}
+.hero>*{display:none}.mark{display:none}.hero h1{display:none}.hero h1 span,.hero h1 strong{color:#20c0bf;font-family:cursive}.hero h1 span{font-size:40px}.hero h1 strong{display:block;font-size:65px;[...]
+.wrap{max-width:950px;margin:auto;padding:15px}.head{text-align:center;border:1px solid #1a8d8d;border-radius:18px 18px 0 0;background:#050909;padding:20px}.head h2{color:#22c7c6;font-size:32px;margin[...]
+@media(max-width:700px){.top nav{display:none}.grid,.features{grid-template-columns:1fr}.hero{min-height:330px;background-size:auto 330px;background-position:center top}}
+</style>
+</head>
+<body>
+<header class="top">
+<a class="brand" href="#home">Snatched by Cece</a>
+<nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#book">BOOK NOW</a><a href="#about">ABOUT ME</a><a href="#policies">POLICIES</a><a href="#contact">CONTACT</a></nav>
+<a class="btn" href="#book">BOOK APPOINTMENT</a>
+</header>
+
+<section class="hero" id="home">
+<div class="cc">CC　　CC　　CC</div>
+<div class="mark">CC</div>
+<h1>Snatched <span>by</span><strong>Cece</strong></h1>
+<div class="tag">LUXURY HAIR　•　BEAUTY　•　CONFIDENCE</div>
+</section>
+
+<main class="wrap" id="book">
+<div class="head"><h2>Request an Appointment</h2><p>Send your preferred date and time. Your appointment is <b>not confirmed</b> until Cece approves it.</p></div>
+<div class="grid">
+<section class="card" id="services">
+<h3>Services & Pricing</h3>
+<div class="service"><span>Knotless Braids — Large</span><b>$100</b></div>
+<div class="service"><span>Quick Weave</span><b>$100</b></div>
+<div class="service"><span>Stitch Braids</span><b>Starts at $80</b></div>
+<div class="service"><span>Wig Install</span><b>$120</b></div>
+<div class="service"><span>Knotless Braids — Medium</span><b>$120</b></div>
+<div class="service"><span>Knotless Braids — Small</span><b>$160</b></div>
+<div class="service"><span>Ponytail</span><b>$60</b></div>
+<div class="note"><b>Booking policy:</b> $15 non-refundable deposit required. 15-minute grace period.</div>
+</section>
+
+<section class="card">
+<h3>Your Booking Request</h3>
+<form class="form" id="bookingForm" action="https://formspree.io/f/xzezbpjj" method="POST">
+<input type="hidden" name="_subject" value="New Snatched by Cece Booking Request">
+<label>Service</label>
+<select name="Service" required><option value="">Select a service</option><option>Knotless Braids — Large ($100)</option><option>Quick Weave ($100)</option><option>Stitch Braids (Starts at $80)</option><option>Wig Install ($120)</option><option>Knotless Braids — Medium ($120)</option><option>Knotless Braids — Small ($160)</option><option>Ponytail ($60)</option></select>
+<label>Preferred date</label><input id="date" type="date" name="Preferred Date" required>
+<label>Preferred time</label><input id="time" type="time" name="Preferred Time" min="09:00" max="19:00" required>
+<label>Your name</label><input name="Client Name" placeholder="Your name" required>
+<label>Your phone number</label><input name="Phone Number" type="tel" placeholder="Your phone number" required>
+<label>Your email</label><input name="Client Email" type="email" placeholder="Your email" required>
+<label>Notes (optional)</label><textarea name="Notes" rows="3" placeholder="Anything Cece should know?"></textarea>
+<label class="check"><input type="checkbox" required><span>I understand my appointment is pending until approved and the $15 deposit is non-refundable.</span></label>
+<button type="submit" id="send">Send Request</button>
+<div class="msg" id="msg"></div>
+</form>
+</section>
+</div>
+</main>
+
+<section class="features"><div><h3>✦ LUXURY HAIR</h3><p>Premium quality for every client.</p></div><div><h3>◇ PREMIUM QUALITY</h3><p>Top-tier hair and premium products.</p></div><div><h3>⌁ EXPERT CARE</h3><p>Tailored beauty services with a luxury touch.</p></div></section>
+
+<section class="info" id="about"><h2>About Cece</h2><p>Welcome to Snatched by Cece — luxury hair, beauty, and confidence.</p></section>
+<section class="info" id="policies"><h2>Policies</h2><p>$15 non-refundable deposit required. 15-minute grace period. Booking requests are not confirmed until approved by Cece.</p></section>
+<section class="info" id="contact"><h2>Contact</h2><p><a href="mailto:snatchedbycece5@gmail.com">snatchedbycece5@gmail.com</a></p></section>
+<footer>© 2026 Snatched by Cece • Luxury Hair • Beauty • Confidence</footer>
+
+<script>
+const form=document.getElementById('bookingForm'),date=document.getElementById('date'),time=document.getElementById('time'),msg=document.getElementById('msg'),send=document.getElementById('send');
+date.min=new Date().toISOString().split('T')[0];
+form.addEventListener('submit',async e=>{
+e.preventDefault(); if(!form.checkValidity()){form.reportValidity();return}
+if(time.value<'09:00'||time.value>'19:00'){alert('Please choose a time between 9:00 AM and 7:00 PM.');return}
+send.disabled=true;send.textContent='Sending...';msg.textContent='';
+try{let r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+if(r.ok){form.reset();msg.textContent='Request sent! Cece will review it and contact you to confirm.'}else{msg.textContent='Something went wrong. Please try again.'}}
+catch(x){msg.textContent='Connection problem. Please try again.'}
+send.disabled=false;send.textContent='Send Request';
+});
+</script>
+</body>
+</html>
